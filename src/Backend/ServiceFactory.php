@@ -67,8 +67,7 @@ class ServiceFactory
     {
         if (isset($this->serviceMap[$serviceName])) {
             $service = $this->serviceMap[$serviceName];
-        }
-        else {
+        } else {
             $serviceClass = '\\Heise\\Shariff\\Backend\\' . $serviceName;
             if (!class_exists($serviceClass)) {
                 throw new \InvalidArgumentException('Invalid service name "' . $serviceName . '".');

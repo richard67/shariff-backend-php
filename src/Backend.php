@@ -37,8 +37,7 @@ class Backend
 
         if (isset($config['cacheClass'])) {
             $cacheClass = $config['cacheClass'];
-        }
-        else {
+        } else {
             $cacheClass = LaminasCache::class;
         }
         $cache = new $cacheClass($config['cache']);

@@ -42,8 +42,7 @@ class Application
         if ($url) {
             $shariff = new Backend(self::$configuration);
             echo json_encode($shariff->get($url));
-        }
-        else {
+        } else {
             echo json_encode(null);
         }
     }

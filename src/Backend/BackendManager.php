@@ -64,8 +64,7 @@ class BackendManager
         $this->client = $client;
         if (is_array($domains)) {
             $this->domains = $domains;
-        }
-        elseif (is_string($domains)) {
+        } elseif (is_string($domains)) {
             trigger_error(
                 'Passing a domain string is deprecated since 5.1, please use an array instead.',
                 E_USER_DEPRECATED
@@ -122,8 +121,7 @@ class BackendManager
                 if ($this->logger !== null) {
                     $this->logger->warning($results[$i]->getMessage(), ['exception' => $results[$i]]);
                 }
-            }
-            else {
+            } else {
                 try {
                     $content = $service->filterResponse($results[$i]->getBody()->getContents());
                     $json = json_decode($content, true);
