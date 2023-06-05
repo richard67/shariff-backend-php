@@ -21,12 +21,12 @@
         }
     ],
     "require": {
-        "php": "^7.2 || ^8.0",
-        "guzzlehttp/guzzle": "^7.4.1",
-        "psr/log": "^1.0",
-        "laminas/laminas-cache": "^3.1",
-        "laminas/laminas-cache-storage-adapter-filesystem": "^2.0",
-        "laminas/laminas-cache-storage-adapter-memory": "^2.0",
+        "php": "^7.4 || ^8.0",
+        "guzzlehttp/guzzle": "^7.7.0",
+        "psr/log": "^1.1",
+        "laminas/laminas-cache": "^3.6",
+        "laminas/laminas-cache-storage-adapter-filesystem": "^2.2",
+        "laminas/laminas-cache-storage-adapter-memory": "^2.1",
         "laminas/laminas-cache-storage-deprecated-factory": "^1.0"
     },
     "require-dev": {
@@ -36,7 +36,7 @@
         "optimize-autoloader": true,
         "sort-packages": true,
         "platform": {
-            "php": "7.2.0"
+            "php": "7.4.0"
         }
     },
     "autoload": {
