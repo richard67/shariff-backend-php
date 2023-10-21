@@ -52,16 +52,15 @@ class BackendManager
      * @param ServiceInterface[] $services
      */
     public function __construct(
-        string          $baseCacheKey,
-        CacheInterface  $cache,
+        string $baseCacheKey,
+        CacheInterface $cache,
         ClientInterface $client,
-                        $domains,
-        array           $services
-    )
-    {
+        $domains,
+        array $services
+    ) {
         $this->baseCacheKey = $baseCacheKey;
-        $this->cache = $cache;
-        $this->client = $client;
+        $this->cache        = $cache;
+        $this->client       = $client;
         if (is_array($domains)) {
             $this->domains = $domains;
         } elseif (is_string($domains)) {
@@ -115,7 +114,7 @@ class BackendManager
         $results = Pool::batch($this->client, $requests);
 
         $counts = [];
-        $i = 0;
+        $i      = 0;
         foreach ($this->services as $service) {
             if ($results[$i] instanceof TransferException) {
                 if ($this->logger !== null) {
@@ -123,8 +122,8 @@ class BackendManager
                 }
             } else {
                 try {
-                    $content = $service->filterResponse($results[$i]->getBody()->getContents());
-                    $json = json_decode($content, true);
+                    $content                     = $service->filterResponse($results[$i]->getBody()->getContents());
+                    $json                        = json_decode($content, true);
                     $counts[$service->getName()] = is_array($json) ? (int)$service->extractCount($json) : 0;
                 } catch (\Exception $e) {
                     if ($this->logger !== null) {
