@@ -41,7 +41,7 @@ deploy:
    - shariff-backend-php.tar.gz
   skip_cleanup: true
   on:
-    repo: richard67/shariff-backend-php
+    repo: heiseonline/shariff-backend-php
     tags: true
     php: 8.1
     condition: $SHARIFF_RUN_TEST = 1
