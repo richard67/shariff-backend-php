@@ -1,5 +1,9 @@
 # Changelog
 
+## 10.2.0, 2025-04-18
+
+* Add support for PHP 8.4 (richard67)
+
 ## 10.1.0, 2025-04-18
 
 * Add support for PHP 8.3 (liayn)
