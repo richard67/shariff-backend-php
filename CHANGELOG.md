@@ -1,9 +1,11 @@
 # Changelog
 
-##
+## 10.1.0, 2025-04-18
 
 * Add support for PHP 8.3 (liayn)
 * Add support for PHP 8.2 (liayn)
+* Update code style and unit tests configurations to latest dependency updates and move code style to PSR12 (richard67)
+* Update Facebook service to latest Facebook Graph API version v22.0 (richard67)
 
 ## 10.0.0, 2023-10-25
 
