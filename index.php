@@ -26,13 +26,13 @@ class Application
             'www.ct.de'
         ],
         'services' => [
+            'Buffer',
             'Facebook',
+            'Pinterest',
             'Reddit',
             'StumbleUpon',
-            'Pinterest',
-            'Xing',
-            'Buffer',
-            'Vk'
+            'Vk',
+            'Xing'
         ]
     ];
 

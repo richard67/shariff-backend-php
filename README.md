@@ -95,7 +95,7 @@ use Heise\Shariff\LaminasCache;
  *
  * @var array
  */
-private static $configuration = [
+private static array $configuration = [
     'cacheClass' => 'Heise\\Shariff\\LaminasCache',
     'cache' => [
         'ttl' => 60,
@@ -117,13 +117,13 @@ private static $configuration = [
         'www.ct.de'
     ],
     'services' => [
+        'Buffer',
         'Facebook',
+        'Pinterest',
         'Reddit',
         'StumbleUpon',
-        'Pinterest',
-        'Xing',
-        'Buffer',
-        'Vk'
+        'Vk',
+        'Xing'
     ],
     'Facebook' => [
       'app_id' => '1234567890',
