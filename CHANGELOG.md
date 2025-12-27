@@ -1,8 +1,11 @@
 # Changelog
 
-## 10.2.0, 2025-04-18
+## 11.0.0, 2025-12-27
 
 * Add support for PHP 8.4 (richard67)
+* Drop support for PHP 7.4 + PHP 8.0 (richard67)
+* Update Facebook service to latest Facebook Graph API version v24.0 (richard67)
+* Update dependencies (richard67)
 
 ## 10.1.0, 2025-04-18
 
