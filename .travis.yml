@@ -3,8 +3,6 @@ language: php
 sudo: false
 
 php:
- - 7.4
- - 8.0
  - 8.1
  - 8.2
  - 8.3
@@ -46,5 +44,5 @@ deploy:
   on:
     repo: heiseonline/shariff-backend-php
     tags: true
-    php: 7.4
+    php: 8.1
     condition: $SHARIFF_RUN_TEST = 1
