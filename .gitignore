@@ -1,8 +1,9 @@
 # Created by https://www.gitignore.io
 .idea/
 build/
-shariff-backend-php.zip
-shariff-backend-php.tar.gz
+shariff-backend-php*.zip
+shariff-backend-php*.tar
+shariff-backend-php*.tar.gz
 
 ### Composer ###
 composer.phar
