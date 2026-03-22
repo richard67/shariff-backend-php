@@ -1,5 +1,9 @@
 # Changelog
 
+## 11.1.0, 2026-03-22
+
+* Update Facebook service to latest Facebook Graph API version v25.0 (richard67)
+
 ## 11.0.0, 2025-12-27
 
 * Add support for PHP 8.4 (richard67)
