@@ -30,7 +30,6 @@ class Application
             'Facebook',
             'Pinterest',
             'Reddit',
-            'StumbleUpon',
             'Vk',
             'Xing'
         ]
