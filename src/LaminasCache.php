@@ -29,7 +29,7 @@ class LaminasCache implements CacheInterface
             $configuration['adapterOptions'] = [];
         }
 
-        $className = 'Laminas\\Cache\\Storage\\Adapter\\' . $configuration['adapter'];
+        $className = '\\Laminas\\Cache\\Storage\\Adapter\\' . $configuration['adapter'];
         $cache     = new $className($configuration['adapterOptions']);
 
         $options = $cache->getOptions();
