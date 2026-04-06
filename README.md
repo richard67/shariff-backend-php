@@ -21,10 +21,10 @@ Requirements
 
 To run Shariff PHP Backend on your server you need one of these PHP versions:
 
-* 8.1
 * 8.2
 * 8.3
 * 8.4
+* 8.5
 
 Older versions and HHVM are not supported.
 
