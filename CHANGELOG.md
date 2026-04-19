@@ -1,5 +1,10 @@
 # Changelog
 
+## 12.0.0, 2026-04-19
+
+* Remove StumbleUpon service (richard67)
+* Add PHP 8.5 support, drop PHP 8.1 support and update dependencies (richard67)
+
 ## 11.1.0, 2026-03-22
 
 * Update Facebook service to latest Facebook Graph API version v25.0 (richard67)
