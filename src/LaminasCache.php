@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace Heise\Shariff;
 
@@ -21,16 +21,8 @@ class LaminasCache implements CacheInterface
      */
     public function __construct(array $configuration)
     {
-        if (!isset($configuration['adapter'])) {
-            $configuration['adapter'] = 'Filesystem';
-        }
-
-        if (!isset($configuration['adapterOptions'])) {
-            $configuration['adapterOptions'] = [];
-        }
-
-        $className = '\\Laminas\\Cache\\Storage\\Adapter\\' . $configuration['adapter'];
-        $cache     = new $className($configuration['adapterOptions']);
+        $className = '\\Laminas\\Cache\\Storage\\Adapter\\' . ($configuration['adapter'] ?? 'Filesystem');
+        $cache     = new $className($configuration['adapterOptions'] ?? []);
 
         $options = $cache->getOptions();
         $options->setNamespace('Shariff');
