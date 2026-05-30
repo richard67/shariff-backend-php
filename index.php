@@ -31,7 +31,7 @@ class Application
             'Pinterest',
             'Reddit',
             'Vk',
-            'Xing'
+            'Xing',
         ],
     ];
 

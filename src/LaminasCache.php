@@ -22,7 +22,7 @@ class LaminasCache implements CacheInterface
     public function __construct(array $configuration)
     {
         $className = '\\Laminas\\Cache\\Storage\\Adapter\\' . ($configuration['adapter'] ?? 'Filesystem');
-        $cache     = new $className($configuration['adapterOptions'] ?? []);
+        $cache = new $className($configuration['adapterOptions'] ?? []);
 
         $options = $cache->getOptions();
         $options->setNamespace('Shariff');
