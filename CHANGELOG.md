@@ -1,5 +1,10 @@
 # Changelog
 
+## 12.1.0, 2026-08-16
+
+* Update Facebook service to latest Facebook Graph API version v26.0 (richard67)
+* Update dependencies (richard67)
+
 ## 12.0.0, 2026-04-19
 
 * Remove StumbleUpon service (richard67)
